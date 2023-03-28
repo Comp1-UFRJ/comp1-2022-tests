@@ -1,4 +1,4 @@
-from lista1 import questao_1, questao_2
+from lista1 import questao_1
 import numpy as np
 
 def read_matrix_from_file(file_path):
@@ -10,7 +10,7 @@ def read_matrix_from_file(file_path):
                 converted_inputs.append(list(map(float, i.split(','))))
         return converted_inputs
         
-def test_question_1(func = questao_1, tests_location = 'comp1-2022-tests/lista1/questao1'):
+def test_question_1(func = questao_1):
     inputs = read_matrix_from_file('input')
     targets = read_matrix_from_file('output')
     outputs = []
